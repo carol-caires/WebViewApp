@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
             WebSettings webSettings = mWebView.getSettings();
             webSettings.setJavaScriptEnabled(true);
 
-            mWebView.loadUrl("http://www.prestus.com.br/clientes");
+            mWebView.loadUrl("file:///android_asset/www/index.html");
 
             // Stop local links and redirects from opening in browser instead of WebView
             mWebView.setWebViewClient(new MyAppWebViewClient());
